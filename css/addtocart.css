@@ -1,0 +1,194 @@
+/**************************************************** know us **************************************************************/
+
+.read-more-banner {
+    width: 100%;
+    height: 400px;
+    background-image: url("../img/about/banner.png");
+    background-size: cover;
+    background-position: top 10% right 0;
+    display: flex;
+    padding: 0 80px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.read-more-banner h1 {
+    color: white;
+    font-size: 60px;
+}
+
+.read-more-banner p {
+    color: white;
+}
+
+
+/**************************************************** know us **************************************************************/
+
+
+/**************************************************** cart table **************************************************************/
+
+.cart {
+    overflow-x: auto;
+}
+
+.cart table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    white-space: nowrap;
+}
+
+.cart table td:nth-child(1) {
+    width: 100px;
+    text-align: center;
+}
+
+.cart table td:nth-child(2) {
+    width: 150px;
+    text-align: center;
+}
+
+.cart table td:nth-child(3) {
+    width: 250px;
+    text-align: center;
+}
+
+.cart table td:nth-child(4),
+.cart table td:nth-child(5),
+.cart table td:nth-child(6) {
+    width: 150px;
+    text-align: center;
+}
+
+.cart table img {
+    width: 70px;
+}
+
+.cart table thead {
+    border: 1px solid #e2e9e1;
+    border-left: none;
+    border-right: none;
+}
+
+.cart table thead td {
+    font-size: 15px;
+    font-weight: 800;
+    padding: 18px 0;
+}
+
+.cart table tbody tr td {
+    padding: 15px;
+    font-size: 13px;
+}
+
+.cart table tbody tr i {
+    font-size: 20px;
+}
+
+.cart table td {
+    text-align: center;
+}
+
+.num {
+    width: 70px;
+    padding: 10px 2px 10px 15px;
+}
+
+
+/**************************************************** cart table **************************************************************/
+
+
+/**************************************************** cart coupen&total ************************************************************/
+
+.cart-coupon-total {
+    width: 100%;
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.coupon {
+    width: 50%;
+}
+
+.total {
+    width: 50%;
+    padding: 30px;
+    border: 1px solid #e2e9e1;
+}
+
+.total table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.total table td {
+    border: 1px solid #e2e9e1;
+    padding: 10px;
+}
+
+.coupon button {
+    background-color: #088178;
+    color: white;
+    padding: 10px 20px;
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+.total button {
+    background-color: #088178;
+    color: white;
+    padding: 10px 20px;
+    font-weight: 600;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.coupon input {
+    outline: none;
+    padding: 10px 20px;
+    width: 60%;
+    margin-right: 10px;
+    border: 1px solid #e2e9e1;
+}
+
+
+/**************************************************** cart coupen&total ************************************************************/
+
+
+/**************************************************** media query **************************************************************/
+
+@media (max-width:799px) {
+    .new-sletters {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .news-email {
+        width: 60%;
+    }
+}
+
+@media (max-width:477px) {
+    .read-more-banner {
+        padding: 0px;
+    }
+    .news-email {
+        width: 100%;
+    }
+    .new-sletters {
+        padding: 40px 20px;
+    }
+    .cart-coupon-total {
+        display: flex;
+        flex-direction: column;
+    }
+    .coupon {
+        width: 100%;
+    }
+    .total {
+        margin-top: 20px;
+        width: 100%;
+    }
+}
